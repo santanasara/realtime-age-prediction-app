@@ -1,6 +1,6 @@
 # Predição de Idade em Tempo Real
 
-Este projeto utiliza YOLO e Redes Neurais Convolucionais (CNNs) para detectar rostos e prever a faixa etária em tempo real a partir de uma webcam.
+Este projeto utiliza YOLO e Redes Neurais Convolucionais para detectar rostos e prever a faixa etária em tempo real a partir de uma webcam.
 
 ## Funcionalidades
 - Detecção de faces em tempo real usando YOLO.
@@ -16,7 +16,7 @@ Este projeto utiliza YOLO e Redes Neurais Convolucionais (CNNs) para detectar ro
 ├── models/                   # Modelos treinados
 │   ├── age_cnn_model_final.h5 # Modelo CNN treinado para predição de idade
 ├── requirements.txt          # Dependências do projeto
-├── data/                     # Dados ou exemplos para o modelo
+├── data/                     # Dados do modelo
 │   main.py                   # Script principal para rodar o aplicativo
 ```
 
@@ -28,7 +28,7 @@ Este projeto utiliza YOLO e Redes Neurais Convolucionais (CNNs) para detectar ro
 
 2. Execute o aplicativo:
    ```bash
-   python app/main.py
+   python main.py
    ```
 
 3. Abra o link gerado no navegador para acessar a interface Gradio.
