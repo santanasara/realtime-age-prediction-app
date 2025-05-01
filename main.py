@@ -9,7 +9,7 @@ class AgePredictionApp:
         self.processor = WebcamProcessor()
         self.effects = ["age_prediction"]
 
-    def process_frame(self, img: np.ndarray, effect: str):
+    def process_frame(self, img: np.ndarray, effect: str = "age_prediction"):
         if img is None:
             return np.zeros((128, 128, 3), dtype=np.uint8)
             

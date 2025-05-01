@@ -2,7 +2,6 @@
 import cv2
 import numpy as np
 from ultralytics import YOLO
-import torch
 from huggingface_hub import hf_hub_download
 import tensorflow as tf
 from tensorflow.keras.models import load_model
@@ -19,14 +18,12 @@ AGE_RANGES = [
 ]
 class AgePredictor:
     def __init__(self):
-        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.face_model_path = hf_hub_download(repo_id="AdamCodd/YOLOv11n-face-detection", filename="model.pt") # https://huggingface.co/AdamCodd/YOLOv11n-face-detection
         self._initialize_model()
         self.face_class_id = 0
 
     def _initialize_model(self):
         self.face_model = YOLO(self.face_model_path)
-        self.face_model.to(self.device)
         self.age_model = load_model('models/age_cnn_model_final.h5')
 
     def preditct_age(self, image: np.ndarray):
