@@ -18,8 +18,6 @@ Este projeto utiliza YOLO e Redes Neurais Convolucionais (CNNs) para detectar ro
 ├── requirements.txt          # Dependências do projeto
 ├── data/                     # Dados ou exemplos para o modelo
 │   main.py                   # Script principal para rodar o aplicativo
-
-
 ```
 
 ## Como Rodar
@@ -37,7 +35,6 @@ Este projeto utiliza YOLO e Redes Neurais Convolucionais (CNNs) para detectar ro
 
 ## Dependências
 - TensorFlow
-- Torch
 - OpenCV
 - Gradio
 - ultralytics (YOLO)
