@@ -18,6 +18,8 @@ Este projeto utiliza YOLO e Redes Neurais Convolucionais para detectar rostos e 
 ├── requirements.txt          # Dependências do projeto
 ├── data/                     # Dados do modelo
 │   main.py                   # Script principal para rodar o aplicativo
+├── notebook/                     # Dados do modelo
+│   ├── age_prediction_model.ipynb      # Notebook do modelo
 ```
 
 ## Como Rodar
